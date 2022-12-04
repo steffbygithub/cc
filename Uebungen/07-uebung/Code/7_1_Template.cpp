@@ -1,4 +1,4 @@
-// 7_1_Template.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
+﻿// 7_1_Template.cpp : Diese Datei enthält die Funktion "main". Hier beginnt und endet die Ausführung des Programms.
 //
 
 
@@ -7,10 +7,10 @@
 using std::array; using std::cout; using std::cin;
 
 int* find(int* array, int n, int x) {
-    int* p = &array[0];
+    int* p = &array[0]; // lokale Kopie auf Anfang setzen
     for (int i = 0; i < n;  i++) {
         if (*p == x)
-            return p; // gefunden ==> Pointer zurueckgeben
+            return array; // gefunden ==> Pointer zurueckgeben
         p++;
     }
     return nullptr; // nicht gefunden Null-Pointer zurueckgeben
@@ -23,6 +23,6 @@ int main()
     int* iptr = &iFound;
     array<int,DIM> iArray{ 1,2,3,4,5,6,7,8,9,10};
 // TODO
-    cout << "nicht gefunden! ==>Programmende\n";
+    cout << " ==>Programmende\n";
     return 0;
 }
