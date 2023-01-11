@@ -9,6 +9,8 @@ private:
 	string strNachname;
 	int iAlter;
 	// Deklaration der public-Methoden
+	// Schreibe fuer jedes private geschuetzte 
+	// Feld jeweils eine set- und eine get-Methode
 public:
 	// Standardkonstruktor der Klasse Mensch
 	Mensch();
@@ -16,20 +18,17 @@ public:
 	Mensch(string, string, int);
 	// Destruktor der Klasse Mensch
 	~Mensch();
-	// Schreibe fuer jedes private geschuetzte 
-	// Feld jeweils einen set- und einen get-Prototyp
-
 	// Schreibmethode fuer strVorname
-   
+	void setVorname(string);
 	// Lesemethode fuer strVorname
-   
+	string getVorname();
 	// Schreibmethode fuer strNachname
-   
+	void setNachname(string);
 	// Lesemethode fuer strNachname
-   
+	string getNachname();
 	// Schreibmethode fuer iAlter
-   
+	void setAlter(int);
 	// Lesemethode fuer iAlter
-   
+	int getAlter();
 	string toString();
 };
