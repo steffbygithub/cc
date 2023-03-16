@@ -1,2 +1,2 @@
 # cc
-"Effektives Programieren mit C/C++ im WS2022/23 (VInf 5)"
+"Effektives Programieren mit C/C++ im SoSeS2023 (Inf 4 und CS)"
